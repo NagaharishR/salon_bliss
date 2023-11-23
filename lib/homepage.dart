@@ -10,25 +10,26 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Image.asset('image/salonbliss.jpeg',
-            fit: BoxFit.cover,
-            height: 300,
-            width: 200,),
+            Image.asset(
+              'image/salonbliss.jpeg',
+              fit: BoxFit.cover,
+              height: 300,
+              width: 200,
+            ),
             SizedBox(height: 8),
-
             Row(
               children: [
-              Padding(
-                padding: EdgeInsets.only(left:10.0),
-                child: Text(
-                  "welcome to",
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.black,
+                Padding(
+                  padding: EdgeInsets.only(left: 10.0),
+                  child: Text(
+                    "welcome to",
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
             ),
             SizedBox(height: 0),
             Row(
@@ -48,15 +49,14 @@ class HomePage extends StatelessWidget {
             Row(
               children: [
                 Padding(padding: EdgeInsets.symmetric(horizontal: 6)),
-                OutlinedButton(onPressed: (){},
+                OutlinedButton(
+                    onPressed: () {},
                     style: OutlinedButton.styleFrom(
-                      primary: Colors.black,
-                      backgroundColor: Colors.black12
-                    ),
-                    child: Text('Beauty Trade Show',
-                style: TextStyle(fontSize: 15),
-                    )
-                )
+                        primary: Colors.black, backgroundColor: Colors.black12),
+                    child: Text(
+                      'Beauty Trade Show',
+                      style: TextStyle(fontSize: 15),
+                    ))
               ],
             ),
             SizedBox(height: 10),
@@ -69,9 +69,11 @@ class HomePage extends StatelessWidget {
                       primary: Colors.white,
                       backgroundColor: Colors.redAccent,
                     ),
-                    onPressed: (){},
-                    child: Text('Make a Booking',
-                    style: TextStyle(fontSize: 30),))
+                    onPressed: () {},
+                    child: Text(
+                      'Make a Booking',
+                      style: TextStyle(fontSize: 30),
+                    ))
               ],
             ),
             SizedBox(height: 10),
@@ -89,12 +91,16 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-             SizedBox(height: 8,),
-             Row(
+            SizedBox(
+              height: 8,
+            ),
+            Row(
               children: [
                 Padding(padding: EdgeInsets.symmetric(horizontal: 15)),
-                Icon(Icons.call,
-                color: Colors.redAccent,),
+                Icon(
+                  Icons.call,
+                  color: Colors.redAccent,
+                ),
                 Expanded(
                   child: Text(
                     'Call us                                                                                                     020 7100 9290',
@@ -102,13 +108,17 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            Divider( indent: 15,
-              endIndent: 15,),
+            Divider(
+              indent: 15,
+              endIndent: 15,
+            ),
             Row(
               children: [
                 Padding(padding: EdgeInsets.symmetric(horizontal: 15)),
-                Icon(Icons.location_on_outlined,
-                color: Colors.redAccent,),
+                Icon(
+                  Icons.location_on_outlined,
+                  color: Colors.redAccent,
+                ),
                 Expanded(
                   child: Text(
                     'Find us                                                                                                       London, England,United kingdom(mainland)',
@@ -116,27 +126,33 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            Divider( indent: 15,
-              endIndent: 15,),
+            Divider(
+              indent: 15,
+              endIndent: 15,
+            ),
             Row(
               children: [
                 Padding(padding: EdgeInsets.symmetric(horizontal: 15)),
-                Icon(Icons.mail_outline_rounded,
-                  color: Colors.redAccent,),
+                Icon(
+                  Icons.mail_outline_rounded,
+                  color: Colors.redAccent,
+                ),
                 SizedBox(width: 10),
                 Text('Email us'),
               ],
             ),
-            Divider( indent: 15,
-              endIndent: 15,),
+            Divider(
+              indent: 15,
+              endIndent: 15,
+            ),
             Row(
               children: [
                 Padding(padding: EdgeInsets.symmetric(horizontal: 13)),
-              Text('Opening hours',
-              style: TextStyle(
-                color: Colors.redAccent
-              ),)
-            ],
+                Text(
+                  'Opening hours',
+                  style: TextStyle(color: Colors.redAccent),
+                )
+              ],
             ),
             SizedBox(height: 9),
             Row(
@@ -201,11 +217,9 @@ class HomePage extends StatelessWidget {
                 Text('09:00 - 19:00'),
               ],
             ),
-
           ],
         ),
       ),
     );
   }
-
 }
